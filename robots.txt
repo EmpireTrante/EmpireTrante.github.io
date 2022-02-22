@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://empiretrante.github.io/sitemap.xml
