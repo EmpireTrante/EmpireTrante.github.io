@@ -3,12 +3,58 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-23T15:14:25+01:00</updated>
+    <updated>2022-02-23T19:02:49+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
     <id>https://empiretrante.github.io</id>
 
+    <entry>
+        <title>Les Avions du Maître</title>
+        <author>
+            <name>Zero</name>
+        </author>
+        <link href="https://empiretrante.github.io/les-avions-du-maitre.html"/>
+        <id>https://empiretrante.github.io/les-avions-du-maitre.html</id>
+
+        <updated>2022-02-23T19:02:49+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://empiretrante.github.io/media/posts/6/plans-avions-2.jpg" alt="" />
+                    Guydo a conçu cinq projets, et fait voler cinq modèles distincts. A partir de ces cinq modèles d'origine, tous les autres ont été&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://empiretrante.github.io/media/posts/6/plans-avions-2.jpg" alt="" />
+                <p><strong>Guydo a conçu cinq projets, </strong>et fait voler cinq modèles distincts. A partir de ces cinq modèles d'origine, tous les autres ont été développés en copiant l'original mais avec de légères différences... chaque avion est unique, et les meilleurs avions sont copiés pour en faire de nouveaux, là encore avec quelques différences. En d'autres termes, on fait de la sélection naturelle appliquée à l'artisanat aéronautique. Les 5 modèles du maître ressemblaient tous plus ou moins à des oiseaux. Tous des monoplans, sauf le 4ème modèle, un biplan. Le second était à hélice propulsive, les autres sont tous à hélice tractive. Le troisième était à ailes hautes.</p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>Par delà les océans</title>
+        <author>
+            <name>Zero</name>
+        </author>
+        <link href="https://empiretrante.github.io/par-dela-les-oceans.html"/>
+        <id>https://empiretrante.github.io/par-dela-les-oceans.html</id>
+            <category term="Univers"/>
+
+        <updated>2022-02-23T16:10:46+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://empiretrante.github.io/media/posts/5/compass.jpg" alt="" />
+                    En comparaison des siècles de navigation maritime, les avions ne représentent qu'une jeune étincelle d'ingéniosité. On trouve en effet tous les types de&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://empiretrante.github.io/media/posts/5/compass.jpg" alt="" />
+                <p><strong>En comparaison des siècles de navigation maritime,</strong> les avions ne représentent qu'une jeune étincelle d'ingéniosité. On trouve en effet tous les types de navires auxquels on peut s'attendre, en fonction des usages et des cultures.</p>
+<p><strong>Les Kurgoths, les Torgoths et les Trantes </strong>notamment, sont de grands marins.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>La République d&#x27;Eugide</title>
         <author>
