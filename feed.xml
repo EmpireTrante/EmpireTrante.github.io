@@ -3,12 +3,36 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-23T10:09:10+01:00</updated>
+    <updated>2022-02-23T11:24:26+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
     <id>https://empiretrante.github.io</id>
 
+    <entry>
+        <title>La linguistique</title>
+        <author>
+            <name>Zero</name>
+        </author>
+        <link href="https://empiretrante.github.io/linguitique-comparee.html"/>
+        <id>https://empiretrante.github.io/linguitique-comparee.html</id>
+            <category term="Univers"/>
+
+        <updated>2022-02-23T11:24:26+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://empiretrante.github.io/media/posts/2/book-g83b0d7a49_1920.jpg" alt="" />
+                    Dans les pays unifiés de la République d'Eugide, on parle Elefen principalement. Trante est polyglotte. Au sud, de nombreux Trantes parlent Elefen, et&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://empiretrante.github.io/media/posts/2/book-g83b0d7a49_1920.jpg" alt="" />
+                <p><strong>Dans les pays unifiés de la République d'Eugide,</strong> on parle <a href="https://elefen.org/" class="postlink elonw" title="Opens in new window">Elefen</a> principalement.<br><br><strong>Trante est polyglotte.</strong> Au sud, de nombreux Trantes parlent Elefen, et au sud-est on parle aussi beaucoup Goth. À l'ouest, dans les 2000 Km autour de la capitale, on parle surtout Trant <em>(Français)</em>. <br><br><strong>Les peuples Goths</strong> parlent le Goth <em>(Anglais avec un R à la française)</em>.<br><br><strong>Les Essembriens ont en fait deux langue</strong>s complètement distinctes. Le peuple parle une langue qu'ils appellent eux-mêmes le <a href="https://tokipona.org/" class="postlink elonw" title="Opens in new window">Bien-parler</a>. Les érudits, en revanche, utilisent une langue extrêmement complexe, le <a href="https://lojban.io/" class="postlink elonw" title="Opens in new window">Lojban</a>. C'est la langue écrite des manuscrits, mais il paraît que les sages Essembriens savent aussi le parler couramment. On raconte que c'est la langue télépathique des Dragons.<br><br><strong>Enfin, à Tanska</strong> il y a plusieurs langues, mais la plus répandue est le Khitab <em>(Arabe)</em>. <br><br><strong>Bien sûr au niveau linguistique, les frontières sont floues</strong>, et il y a beaucoup de patois plus ou moins locaux.</p>
+<p><br><em class="text-italics">(Note : le fait de donner des correspondances vers des langues réelles, naturelles ou construites, a pour but de rendre les parties plus vivantes, en augmentant l'immersion des joueurs.)</em></p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Le Monde de Trante</title>
         <author>
@@ -16,9 +40,9 @@
         </author>
         <link href="https://empiretrante.github.io/le-monde-de-trante.html"/>
         <id>https://empiretrante.github.io/le-monde-de-trante.html</id>
-            <category term="L&#x27;Empire Trante"/>
+            <category term="Univers"/>
 
-        <updated>2022-02-23T10:09:10+01:00</updated>
+        <updated>2022-02-23T10:37:37+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/1/Monde-de-Trante-2.JPG" alt="" />
@@ -38,7 +62,7 @@
 <br>
 <br><strong>Le balt est un métal ductile qui pèse plus lourd d'un côté que de l'autre </strong>! Dans un sens, il pèse environ 19,1g/cm3, c'est à dire presque autant que l'or, un des métaux les plus lourds. Dans l'autre sens, si on le retourne, il ne pèse que 2,8g/cm3, à peine plus que l'aluminium.
 <br>
-<br><strong>L'empire de Trante, au sommet d'une période d'effervescence culturelle et intellectuelle, a réussi à inventer des machines volantes,</strong> grâce à un inventeur de génie, Guydo dit "le Lion". Trois litres de balt, actionnés par un mécanisme d'horlogerie précis, suffisent à créer un moteur de 28CH, nécessaire à l'envol des avions (je tiens ma feuille de calcul Excel à disposition des curieux). Ainsi, les Trantes ont désormais des ailes, et ils sont les seuls à posséder cette technologie.
+<br><strong>L'empire de Trante, au sommet d'une période d'effervescence culturelle et intellectuelle, a réussi à inventer des machines volantes,</strong> grâce à un inventeur de génie, Guydo dit "le Lion". Trois litres de balt, actionnés par un mécanisme d'horlogerie précis, suffisent à créer un moteur de 28CH, nécessaire à l'envol des avions. Ainsi, les Trantes ont désormais des ailes, et ils sont les seuls à posséder cette technologie.
 <br>
 <br><strong>Le balt ne se trouve qu'à l'autre bout de la planète,</strong> en Tanska. Les peuples Torgoth et Kurgoth, des marins guerriers au code d'honneur tranchant comme une lame, en font commerce. Il n'y a pas de route de la soie, mais il y a une route du balt, de Tanska à Trante, en passant par les territoires Torgoth et Kurgoth. Bien sûr, Trante préfèrerait accéder directement à Tanska pour le commerce, seulement voilà : la Terre des Dragons, sauvage, impétueuse, indomptable, leur en interdit l'accès. C'est pourquoi toute l'actualité de Trante est tournée vers la tentation de cette terre promise : la Terre des Dragons... peut-on, et surtout doit-on, entrer en guerre avec les dragons ?
 <br>
