@@ -1,8 +1,8 @@
-# EmpireTrante.github.io
+# empiretrante.github.io
 
-Site web pour l'Empire Trante JdR
+Site web pour le Jeu de Rôle Amateur [Dans le Ciel de Trante](https://empiretrante.github.io/).
 
-
+[![](https://github.com/EmpireTrante/EmpireTrante.github.io/blob/main/media/website/site-background.png)](https://empiretrante.github.io/)
 
 ## Crédits photos
 
