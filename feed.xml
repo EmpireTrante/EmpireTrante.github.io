@@ -3,12 +3,35 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-23T11:30:19+01:00</updated>
+    <updated>2022-02-23T12:11:33+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
     <id>https://empiretrante.github.io</id>
 
+    <entry>
+        <title>Les Religions</title>
+        <author>
+            <name>Zero</name>
+        </author>
+        <link href="https://empiretrante.github.io/les-religions.html"/>
+        <id>https://empiretrante.github.io/les-religions.html</id>
+            <category term="Univers"/>
+
+        <updated>2022-02-23T12:11:33+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://empiretrante.github.io/media/posts/3/hands-g82e908fb3_1920.jpg" alt="" />
+                    L'Empire Trante a globalement une religion bithéiste, avec un Dieu, Edo, et une Déesse, Eia, dont l'union a engendré le monde. L'Empereur et&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://empiretrante.github.io/media/posts/3/hands-g82e908fb3_1920.jpg" alt="" />
+                <p><strong>L'Empire Trante a globalement une religion bithéiste,</strong> avec un Dieu, Edo, et une Déesse, Eia, dont l'union a engendré le monde. L'Empereur et l'Impératrice sont censés être les reflets des dieux. Le rapport à la religion est toutefois devenu modéré et rationnel à l'est et au sud de Trante. Dans le nord par contre, la foi est plus naïve et littérale, et dans sa version plus archaïque inclut toute une famille de dieux et de déesses enfants de Edo et Eia.<br><br><strong>La République d'Eugide a un riche panthéon</strong> de dieux et de déesses qui correspondent à divers aspect de la vie, de la mort... pour le dire vite, ils ont des dieux pour tout et n'importe quoi.<br><br><strong>Essembria a une religion sans dieu créateur, </strong>complexe et animiste.<br><br><strong>Les goths ont Harl, </strong>dieu créateur, Vidar, dieu de la guerre et de l'honneur, Verdandi, déesse de la mer, Einar, dieu trompeur de la malice et du mensonge, et Bergunn, déesse de l'art et de l'eau de vie.<br><br><strong>À Tanska, l'entité la plus importante est l'esprit du Feu,</strong> qui amène la vie. Puis il y a l'esprit de l'Air, l'esprit de l'Eau, et l'esprit de la Terre. C'est le jeu de ces quatre esprits et d'un cinquième, l'esprit du Vide Médian, qui créé et anime toute chose.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>La linguistique</title>
         <author>
