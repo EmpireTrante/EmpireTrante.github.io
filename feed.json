@@ -10,6 +10,21 @@
     },
     "items": [
         {
+            "id": "https://empiretrante.github.io/la-republique-deugide.html",
+            "url": "https://empiretrante.github.io/la-republique-deugide.html",
+            "title": "La République d&#x27;Eugide",
+            "summary": "La vaste République d'Eugide est la seule démocratie de la planète. Les Eugidiens sont des gens calmes et disciplinés, voire froids. Leur capacité&hellip;",
+            "content_html": "<div><strong>La vaste République d'Eugide</strong> est la seule démocratie de la planète. Les Eugidiens sont des gens calmes et disciplinés, voire froids. Leur capacité à se battre de façon également calme, disciplinée et froide, leur vaut le respect des frontaliers de Trante.</div>\n<div> </div>\n<div><span style=\"color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);\"><strong>Les pays unifiés de la République</strong> d'Eugide risquent de changer de régime pour basculer en empire. La récente invention des avions de Trante inquiète en effet de nombreux sénateurs, qui craignent une déclaration de guerre de Trante, dont ils connaissent l'ambition. Cela donne du grain à moudre aux partisans de Cleio, le descendant du dernier empereur ayant régné sur ce continent, à l'époque où les Trantes n'en avaient pas encore envahie le tiers nord-est. Si la République se transformait en Empire, Cleio en serait l'Empereur naturel, et une guerre préventive, comme on dit, suivrait sans doute logiquement.</span></div>",
+            "image": "https://empiretrante.github.io/media/posts/4/res-publica.jpg",
+            "author": {
+                "name": "Zero"
+            },
+            "tags": [
+            ],
+            "date_published": "2022-02-23T15:14:25+01:00",
+            "date_modified": "2022-02-23T15:14:25+01:00"
+        },
+        {
             "id": "https://empiretrante.github.io/les-religions.html",
             "url": "https://empiretrante.github.io/les-religions.html",
             "title": "Les Religions",
