@@ -3,12 +3,42 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-25T10:15:25+01:00</updated>
+    <updated>2022-02-25T12:24:22+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
     <id>https://empiretrante.github.io</id>
 
+    <entry>
+        <title>Les peuples Goths</title>
+        <author>
+            <name>Zero</name>
+        </author>
+        <link href="https://empiretrante.github.io/les-peuples-goths.html"/>
+        <id>https://empiretrante.github.io/les-peuples-goths.html</id>
+
+        <updated>2022-02-25T12:02:26+01:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://empiretrante.github.io/media/posts/7/andreas-achenbach-g3f76e883d_1280-2.jpg" alt="" />
+                     Les Torgoths savent la valeur marchande du balt, mais le méprisent. Dans leur culture, c'est le coeur du guerrier qui fait sa&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <img src="https://empiretrante.github.io/media/posts/7/andreas-achenbach-g3f76e883d_1280-2.jpg" alt="" />
+                <div><br>
+<div><strong>Les Torgoths savent la valeur marchande du balt, </strong>mais le méprisent. Dans leur culture, c'est le coeur du guerrier qui fait sa force, et sa bravoure qui fait sa valeur. Un combattant qui utilise des armes d'acier de balt, use à leurs yeux d'artifices qui le déshonorent. Les Kurgoths, cela dit, sont nettement moins pointilleux à cet égard. Quant aux machines volantes dont ils entendent parler, les goths dans l'ensemble les considèrent comme des enfantillages excentriques et honteux.</div>
+<br>
+<div><strong>Les Kurgoths sont humains. Les Torgoths et les Obergoths ne le sont pas :</strong> ils sont chtards, ainsi que la plupart des habitants de Tanska. Les chtards ont les oreilles sur le dessus de la tête, et peuvent les orienter. Ils sont plus trapus que les humains, ont une machoire puissante et de grands yeux, leur voix est grave et leur visage très expressif.</div>
+<br>
+<div><strong>Tous les goths partagent une culture commune,</strong> notamment religieuse. Les Obergoths ont un roi, mais les Torgoths et les Kurgoths vivent en clans, fidèles à leurs seigneurs. Ces clans, de tailles variables, passent beaucoup de temps à se quereller pour un bout de territoire ou pour l'honneur bafoué d'un lointain ancêtre. Ils peuvent aussi piller les peuples voisins, arrivant de mer comme une tempête, sans pour autant s'installer sur place, repartant comme ils sont venus.</div>
+<br>
+<div><strong>En tout cas, leur (dés)organisation en clans,</strong> et leur mépris du balt, expliquent qu'ils ne cherchent pas à s'approprier les technologies liées à ce métal. Le mot "technologie", s'il existait, ne ferait pas partie de leur vocabulaire de toute façon.</div>
+</div>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Les Avions du Maître</title>
         <author>
@@ -66,7 +96,7 @@
             <category term="Univers"/>
             <category term="La République d&#x27;Eugide"/>
 
-        <updated>2022-02-25T10:15:25+01:00</updated>
+        <updated>2022-02-25T11:04:35+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/4/res-publica.jpg" alt="" />
@@ -90,7 +120,7 @@
 <div> </div>
 <div><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><strong>Les pays unifiés de la République</strong> d'Eugide risquent de changer de régime pour basculer en empire. La récente invention des avions de Trante inquiète en effet de nombreux sénateurs, qui craignent une déclaration de guerre de Trante, dont ils connaissent l'ambition.</span></div>
 <div> </div>
-<div><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><strong>Cela donne du grain à moudre aux partisans de Cleio,</strong> le descendant du dernier empereur ayant régné sur ce continent, à l'époque où les Trantes n'en avaient pas encore envahie le tiers nord-est. Si la République se transformait en Empire, Cleio en serait l'Empereur naturel, et une guerre préventive, comme on dit, suivrait sans doute logiquement.</span></div>
+<div><span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);"><strong>Cela donne du grain à moudre aux partisans de Cleio,</strong> le descendant du dernier empereur ayant régné sur ce continent, à l'époque où les Trantes n'en avaient pas encore envahi le tiers nord-est. Si la République se transformait en Empire, Cleio en serait l'Empereur naturel, et une guerre préventive, comme on dit, suivrait sans doute logiquement. Il y a comme une vieille rancune, chez les partisans de Cleio, et une opinion que le continent tout entier devrait normalement être unifié ; c'est l'idée du Vieil Empire.</span></div>
             ]]>
         </content>
     </entry>
@@ -126,18 +156,21 @@
         <id>https://empiretrante.github.io/linguitique.html</id>
             <category term="Univers"/>
 
-        <updated>2022-02-24T10:57:57+01:00</updated>
+        <updated>2022-02-25T12:24:22+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/2/book-g83b0d7a49_1920.jpg" alt="" />
-                    Dans les pays unifiés de la République d'Eugide, on parle principalement. Trante est polyglotte. Au sud, de nombreux Trantes parlent Elefen, et au&hellip;
+                    Dans les états unifiés de la République d'Eugide, on parle Elefen principalement. Trante est polyglotte. Au sud, de nombreux Trantes parlent Elefen, et au&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://empiretrante.github.io/media/posts/2/book-g83b0d7a49_1920.jpg" alt="" />
-                <p><strong>Dans les pays unifiés de la République d'Eugide,</strong> on parle <a href="https://elefen.org/" title="elefen.org" target="_blank" rel="noopener noreferrer"></a> principalement.<br><br><strong>Trante est polyglotte.</strong> Au sud, de nombreux Trantes parlent <a href="https://elefen.org/" target="_blank" rel="noopener noreferrer">Elefen</a>, et au sud-est on parle aussi beaucoup Goth. À l'ouest, dans les 2000 Km autour de la capitale, on parle surtout Trant <em>(Français)</em>. <br><br><strong>Les peuples Goths</strong> parlent le Goth <em>(Anglais avec un R à la française)</em>.<br><br><strong>Les Essembriens ont en fait deux langue</strong>s complètement distinctes. Le peuple parle une langue qu'ils appellent eux-mêmes le <a href="https://tokipona.org/" title="Opens in new window" target="_blank" rel="noopener noreferrer">tokipona.org</a>. Les érudits, en revanche, utilisent une langue extrêmement complexe, le <a href="https://lojban.io/" title="Opens in new window" target="_blank" rel="noopener noreferrer">Lojban</a>. C'est la langue écrite des manuscrits, mais il paraît que les sages Essembriens savent aussi le parler couramment. On raconte que c'est la langue télépathique des Dragons.<br><br><strong>Enfin, à Tanska</strong> il y a plusieurs langues, mais la plus répandue est le Khitab <em>(Arabe)</em>. <br><br><strong>Bien sûr au niveau linguistique, les frontières sont floues</strong>, et il y a beaucoup de patois plus ou moins locaux.</p>
-<p><br><em class="text-italics">(Note : le fait de donner des correspondances vers des langues réelles, naturelles ou construites, a pour but de rendre les parties plus vivantes, en augmentant l'immersion des joueurs.)</em></p>
+                <p><strong>Dans les états unifiés de la République d'Eugide,</strong> on parle <a href="https://elefen.org/">Elefen</a><a href="https://elefen.org/"></a><a href="https://elefen.org/" title="elefen.org" target="_blank" rel="noopener noreferrer"></a> principalement.<br><br><strong>Trante est polyglotte.</strong> Au sud, de nombreux Trantes parlent <a href="https://elefen.org/" target="_blank" rel="noopener noreferrer">Elefen</a>, et au sud-est on parle aussi beaucoup Goth. À l'ouest, dans les 2000 Km autour de la capitale, on parle surtout Trant <em>(Français)</em>. <br><br><strong>Les peuples Goths</strong> parlent le Goth <em>(Anglais avec un R à la française)</em>.<br><br><strong>Les Essembriens ont en fait deux langue</strong>s complètement distinctes. Le peuple parle une langue qu'ils appellent eux-mêmes le <a href="https://tokipona.org/" title="Opens in new window" target="_blank" rel="noopener noreferrer">tokipona.org</a>. Les érudits, en revanche, utilisent une langue extrêmement complexe, le <a href="https://lojban.io/" title="Opens in new window" target="_blank" rel="noopener noreferrer">Lojban</a>. C'est la langue écrite des manuscrits, mais il paraît que les sages Essembriens savent aussi le parler couramment. On raconte que c'est la langue télépathique des Dragons.<br><br><strong>Enfin, à Tanska</strong> il y a plusieurs langues, mais la plus répandue est le Khitab <em>(Arabe)</em>. <br><br><strong>Bien sûr au niveau linguistique, les frontières sont floues</strong>, et il y a beaucoup de patois plus ou moins locaux.</p>
+<p><em class="text-italics">(Note : le fait de donner des correspondances vers des langues réelles, naturelles ou construites, a pour but de rendre les parties plus vivantes, en augmentant l'immersion des joueurs.)</em></p>
+<h2>Le Elefen</h2>
+<p>Le Elefen est une langue qui ressemble aux Eugiens qui la parlent, délicate et très régulière. Elle sonne comme une langue latine tout en étant facile à comprendre.</p>
+<p> </p>
             ]]>
         </content>
     </entry>
