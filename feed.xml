@@ -3,21 +3,21 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T14:54:41+01:00</updated>
+    <updated>2022-02-27T15:33:57+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
     <id>https://empiretrante.github.io</id>
 
     <entry>
-        <title>Tests de Mesures perso</title>
+        <title>Générateur Aléatoire</title>
         <author>
             <name>Zero</name>
         </author>
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T14:54:41+01:00</updated>
+        <updated>2022-02-27T15:33:57+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
@@ -55,7 +55,7 @@
 <li><strong>Langage</strong> - L'aisance littéraire, ou linguistique, du personnage.</li>
 <li><strong>Logique</strong> - L'aisance scientifique, ou mathématique, du personnage.</li>
 <li><strong>Contrôle</strong> - La faculté du personnage de contrôler consciemment et volontairement son comportement.</li>
-<li><strong>Santé Mentale</strong> - La stabilité et la cohérence du personnage.</li>
+<li><strong>Santé Mentale</strong> - La stabilité, la cohérence du personnage, et sa résilience.</li>
 <li><strong>Expire</strong> - La facilité avec laquelle le personnage modifie son environnement.</li>
 <li><strong>Volonté</strong> - La puissance avec laquelle le personnage peut imprimer ses choix sur son environnement, ou résister aux choix que son environnement tente d'imprimer en lui.</li>
 <li><strong>Hargne</strong> - La combativité mentale du personnage, la violente vigueur de son influence.</li>
@@ -329,7 +329,7 @@ function fillChildren(node) {
 
 function prettyPrint(key, value, indent = 0) {
 
-    let result = '|   '.repeat(indent) + key + " " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + ' <span style="color:#808080">(' + scale[value.value+max] + ')</span>\n';
+	let result = '<span style="color:#C0C0C0">' + '|   '.repeat(indent) + '</span>' + key + ' <span style="font-weight:bold;color:#404040">' + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + '</span> <span style="color:#808080">(' + scale[value.value+max] + ')</span>\n';
 
     for (let child in value.children)
         result += prettyPrint(child, value.children[child], indent + 1);
