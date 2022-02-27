@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T15:33:57+01:00</updated>
+    <updated>2022-02-27T16:05:03+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,20 +17,21 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T15:33:57+01:00</updated>
+        <updated>2022-02-27T16:05:03+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
-                    Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, mais respectent les deux règles suivantes.
+                    Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, et sont obtenus en lançant D6&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
-                <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, mais respectent les deux règles suivantes.</p>
+                <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, et sont obtenus en lançant <strong>D6 moins D6</strong> jusqu'à obtenir des Mesures qui respectent les trois règles suivantes.</p>
 <ul>
-<li>Il ne peut pas y avoir plusieurs Mesures "sœurs" au maximum (-5 ou +5).</li>
-<li>Une Mesure "parente" qui serait elle-même au maximum, ne peut avoir de Mesure "fille" qui serait aussi au maximum.</li>
+<li>La somme des Mesures "sœurs" est égale à leur Mesure parente. </li>
+<li>Il ne peut pas y avoir plusieurs Mesures "sœurs" extrêmes (à -5 ou +5).</li>
+<li>Une Mesure "parente" qui serait elle-même extrême, ne peut avoir de Mesure "fille" qui serait elle aussi extrême.</li>
 </ul>
 <p> </p>
 <p><button id="mybutt">Générer une nouvelle liste</button></p>
@@ -276,10 +277,18 @@ let tree = {
 }
 
 
+function D(n) {
+
+    return Math.floor(n * Math.random()) +1;
+}
 
 function rnd() {
 
-    return Math.floor((max * 2 + 1) * Math.random()) - max;
+    return D(6) - D(6);
+    
+    // return D(11) - 6;
+    
+    // return Math.floor((max * 2 + 1) * Math.random()) - max;
 }
 
 
@@ -296,7 +305,12 @@ function match(equilibrium, values) {
     for (let v of values)
         if (isMax(v)) ++countMax;
     if (countMax > 1) return false;
-
+/*
+    let countZero = 0;
+    for (let v of values)
+        if (v == 0) ++countZero;
+    if (countZero > 1) return false;
+*/
     let sum = 0;
     for (let v of values) sum += v;
 
