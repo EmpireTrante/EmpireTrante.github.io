@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T13:05:26+01:00</updated>
+    <updated>2022-02-27T13:29:55+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,14 +17,16 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T13:05:26+01:00</updated>
+        <updated>2022-02-27T13:29:55+01:00</updated>
             <summary>
                 <![CDATA[
+                        <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
                     Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Générer une nouvelle liste 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
+                    <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
                 <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié.</p>
 <p> </p>
 <p> </p>
