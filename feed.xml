@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T14:03:30+01:00</updated>
+    <updated>2022-02-27T14:54:41+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T14:03:30+01:00</updated>
+        <updated>2022-02-27T14:54:41+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
@@ -29,13 +29,62 @@
                     <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
                 <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, mais respectent les deux règles suivantes.</p>
 <ul>
-<li>Il ne peut pas y avoir plusieurs mesures "sœurs" au maximum (-5 ou +5).</li>
-<li>Une mesure "parente" qui serait elle-même au maximum, ne peut avoir de mesure "fille" qui serait aussi au maximum.</li>
+<li>Il ne peut pas y avoir plusieurs Mesures "sœurs" au maximum (-5 ou +5).</li>
+<li>Une Mesure "parente" qui serait elle-même au maximum, ne peut avoir de Mesure "fille" qui serait aussi au maximum.</li>
 </ul>
 <p> </p>
 <p><button id="mybutt">Générer une nouvelle liste</button></p>
 <pre id="feuilleperso" style="font-size: 75%;">    
 </pre>
+<p>Les Mesures méritent une courte explication, pour confirmer que nous parlons de la même chose.</p>
+<ul style="list-style-type: square;">
+<li><strong>Équilibre</strong> - La racine de tout être vivant, qui s'équilibre toujours naturellement.</li>
+<li><strong>Destin</strong> - Assez simplement, quelque chose de pourtant indéfinissable, mais qu'on connaît tous : cette part qui ne dépend pas entièrement de nous.</li>
+<li><strong>Chance</strong> - La chance, qui finit par tourner quand on en a trop souvent besoin.</li>
+<li><strong>Karma</strong> - Le karma augmente si le personnage agit selon sa nature, et diminue s'il va à l'encontre de sa nature. Il s'équilibre ensuite par des événements imprévisibles positifs ou négatifs.</li>
+<li><strong>Personnel</strong> - La qualité de la façon d'être du personnage, sa façon d'agir, ses choix.</li>
+<li><strong>Inspire</strong> - La capacité du personnage a recevoir des informations de son environnement.</li>
+<li><strong>Perception</strong> - La précision des capteurs sensoriels du corps du personnage, et sa capacité à en interpréter les données.</li>
+<li><strong>Vue</strong> - Le personnage voit-il bien et loin.</li>
+<li><strong>Ouïe</strong> - Le personnage entend-il bien et loin, perçoit-il les nuances légères, a-t-il l'oreille musicale.</li>
+<li><strong>Odorat</strong> - Le personnage a-t-il le nez fin.</li>
+<li><strong>Empathie</strong> - Le personnage peut-il facilement comprendre les gens, et percevoir ce qui se passe en eux.</li>
+<li><strong>Intuition</strong> - Le personnage perçoit-il le sens de l'histoire dont il est le protagoniste, peut-il sentir ce qui va se passer.</li>
+<li><strong>Intérieur</strong> - La puissance mentale du personnage, sa capacité à traiter les informations.</li>
+<li><strong>Intellect</strong> - Une certaine forme d'intelligence "procédurale" du personnage.</li>
+<li><strong>Langage</strong> - L'aisance littéraire, ou linguistique, du personnage.</li>
+<li><strong>Logique</strong> - L'aisance scientifique, ou mathématique, du personnage.</li>
+<li><strong>Contrôle</strong> - La faculté du personnage de contrôler consciemment et volontairement son comportement.</li>
+<li><strong>Santé Mentale</strong> - La stabilité et la cohérence du personnage.</li>
+<li><strong>Expire</strong> - La facilité avec laquelle le personnage modifie son environnement.</li>
+<li><strong>Volonté</strong> - La puissance avec laquelle le personnage peut imprimer ses choix sur son environnement, ou résister aux choix que son environnement tente d'imprimer en lui.</li>
+<li><strong>Hargne</strong> - La combativité mentale du personnage, la violente vigueur de son influence.</li>
+<li><strong>Discrétion</strong> - La capacité du personnage à passer inaperçu s'il le souhaite.</li>
+<li><strong>Extérieur</strong> - La qualité du rapport du personnage au monde qui l'entoure.</li>
+<li><strong>Sociabilité</strong> - L'aisance sociale du personnage.</li>
+<li><strong>Connaissance</strong> - La quantité de connaissances que le personnage a accumulé.</li>
+<li><strong>Technique</strong> - Les connaissances techniques du personnage.</li>
+<li><strong>Histoire</strong> - Les connaissances historiques du personnage.</li>
+<li><strong>Géographie</strong> - les connaissances géographiques du personnage.</li>
+<li><strong>Politique</strong> - Les connaissances politiques du personnage.</li>
+<li><strong>Langues</strong> - Les langues étrangères que connait le personnage.</li>
+<li><strong>Charisme</strong> - Le rayonnement, l'aura naturelle du personnage.</li>
+<li><strong>Corporel</strong> - Ce qui concerne les aptitudes physiques du personnage.</li>
+<li><strong>Être</strong> - Les capacités du corps que la nature a donné au personnage.</li>
+<li><strong>Force</strong> - La force musculaire brute du personnage.</li>
+<li><strong>Souplesse</strong> - La capacité du personnage à se contorsionner.</li>
+<li><strong>Constitution</strong> - La solidité globale du corps du personnage : la densité des os, l'épaisseur de la peau.</li>
+<li><strong>Réflexe</strong> - La réactivité naturelle involontaire du personnage.</li>
+<li><strong>Endurance</strong> - La puissance cardiaque, la résistance à l'effort prolongé, aux maladies, aux infections.</li>
+<li><strong>Faire</strong> - Les capacités corporelles que le personnage s'est donné.</li>
+<li><strong>Combat Rapproché</strong> - La science ou l'expérience du combat de mêlée.</li>
+<li><strong>Tir Visé</strong> - Le savoir viser juste du personnage.</li>
+<li><strong>Dextérité</strong> - L'habileté manuelle du personnage.</li>
+<li><strong>Athlétisme</strong> - La capacité du personnage à mobiliser son corps de façon coordonnée, efficace et puissante : courir vite, sauter loin, grimper une paroi, ...etc.</li>
+<li><strong>Agilité</strong> - La mobilité féline du personnage : retomber sur ses pieds, courir sur le mur, glisser entre les jambes d'un adversaire, ...etc.</li>
+</ul>
+<p> </p>
+<p> </p>
 <p>
 <script>
     
