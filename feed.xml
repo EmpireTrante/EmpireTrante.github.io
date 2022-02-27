@@ -3,12 +3,290 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-25T15:46:16+01:00</updated>
+    <updated>2022-02-27T12:55:56+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
     <id>https://empiretrante.github.io</id>
 
+    <entry>
+        <title>Tests de Mesures perso</title>
+        <author>
+            <name>Zero</name>
+        </author>
+        <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
+        <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
+
+        <updated>2022-02-27T12:55:56+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Générer une nouvelle liste 
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+<p><button id="mybutt">Générer une nouvelle liste</button></p>
+<pre id="feuilleperso">    
+</pre>
+<p>
+<script>
+    
+setTimeout(function() {
+document.getElementById("mybutt").addEventListener('click', function () {
+  gen()
+})
+}, 500);
+
+
+
+let max = 5;
+
+let scale = [
+    "Absence",
+    "Carence",
+    "Carence",
+    "Point Faible",
+    "Point Faible",
+    "Equilibre",
+    "Point fort",
+    "Point fort",
+    "Dominance",
+    "Dominance",
+    "Essence"
+]
+
+
+
+let tree = {
+    Equilibre: {
+        value: 0,
+        children: {
+            Destin: {
+                value: 0,
+                children: {
+                    Chance: {
+                        value: 0,
+                    },
+                    Karma: {
+                        value: 0,
+                    }
+                }
+            },
+            Personnel: {
+                value: 0,
+                children: {
+                    Inspire: {
+                        value: 0,
+                        children: {
+                            Perception: {
+                                value: 0,
+                                children: {
+                                    Vue: {
+                                        value: 0,
+                                    },
+                                    Ouie: {
+                                        value: 0,
+                                    },
+                                    Odorat: {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                            Empathie: {
+                                value: 0,
+                            },
+                            Intuition: {
+                                value: 0,
+                            },
+                        }
+                    },
+                    Interieur: {
+                        value: 0,
+                        children: {
+                            Intellect: {
+                                value: 0,
+                                children: {
+                                    Langage: {
+                                        value: 0,
+                                    },
+                                    Logique: {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                            Controle: {
+                                value: 0,
+                            },
+                            SanteMentale: {
+                                value: 0,
+                            },
+                        }
+                    },
+                    Expire: {
+                        value: 0,
+                        children: {
+                            Volonte: {
+                                value: 0,
+                            },
+                            Hargne: {
+                                value: 0,
+                            },
+                            Discretion: {
+                                value: 0,
+                            },
+                        }
+                    },
+                    Exterieur: {
+                        value: 0,
+                        children: {
+                            Sociabilite: {
+                                value: 0,
+                            },
+                            Connaissance: {
+                                value: 0,
+                                children: {
+                                    Technique: {
+                                        value: 0,
+                                    },
+                                    Histoire: {
+                                        value: 0,
+                                    },
+                                    Geographie: {
+                                        value: 0,
+                                    },
+                                    Politique: {
+                                        value: 0,
+                                    },
+                                    Langues: {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                            Charisme: {
+                                value: 0,
+                            },
+                        }
+                    }
+                }
+            },
+            Corporel: {
+                value: 0,
+                children: {
+                    Etre: {
+                        value: 0,
+                        children: {
+                            Force: {
+                                value: 0,
+                            },
+                            Souplesse: {
+                                value: 0,
+                            },
+                            Constitution: {
+                                value: 0,
+                            },
+                            Reflexe: {
+                                value: 0,
+                            },
+                            Endurance: {
+                                value: 0,
+                            },
+                        }
+                    },
+                    Faire: {
+                        value: 0,
+                        children: {
+                            CombatRapproche: {
+                                value: 0,
+                            },
+                            TirVise: {
+                                value: 0,
+                            },
+                            Dexterite: {
+                                value: 0,
+                            },
+                            Athletisme: {
+                                value: 0,
+                            },
+                            Agilite: {
+                                value: 0,
+                            },
+                        }
+                    },
+                }
+            }
+        }
+    }
+}
+
+
+
+function rnd() {
+
+    return Math.floor((max * 2 + 1) * Math.random()) - max;
+}
+
+
+function match(equilibrium, values) {
+
+    let sum = 0;
+    for (let v of values) sum += v;
+
+    return sum == equilibrium;
+}
+
+
+function fillChildren(node) {
+
+    if (!node.children) return;
+
+    let numberOfChildren = Object.keys(node.children).length;
+
+    let cValues = [];
+    for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
+
+    while (!match(node.value, cValues)) {
+        cValues = [];
+        for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
+    }
+
+    for (let c = 0; c < numberOfChildren; c++) {
+
+        node.children[Object.keys(node.children)[c]].value = cValues[c];
+
+        fillChildren(node.children[Object.keys(node.children)[c]]);
+    }
+}
+
+
+function prettyPrint(key, value, indent = 0) {
+
+    let result = ' '.repeat(indent) + key + " → " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + " (" + scale[value.value+max] + ")\n";
+
+    for (let child in value.children)
+        result += prettyPrint(child, value.children[child], indent + 4);
+    
+    return result;
+}
+
+
+function gen() {
+
+    fillChildren(tree.Equilibre);
+    document.getElementById("feuilleperso").innerHTML =
+        prettyPrint("Equilibre", tree.Equilibre);
+}
+
+gen();
+
+</script>
+</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Les peuples Gurts</title>
         <author>
