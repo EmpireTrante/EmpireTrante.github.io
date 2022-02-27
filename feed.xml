@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-28T00:20:19+01:00</updated>
+    <updated>2022-02-28T00:30:59+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-28T00:20:19+01:00</updated>
+        <updated>2022-02-28T00:30:59+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
@@ -35,8 +35,7 @@
 </ul>
 <p> </p>
 <p><button id="mybutt">Générer une nouvelle liste</button></p>
-<pre id="feuilleperso" style="font-size: 75%;">    
-</pre>
+<pre id="feuilleperso" style="font-size: 75%;"> </pre>
 <p>Les Mesures méritent une courte explication, pour confirmer que nous parlons de la même chose.</p>
 <ul style="list-style-type: square;">
 <li><strong>Équilibre</strong> - La racine de tout être vivant, qui s'équilibre toujours naturellement.</li>
@@ -90,387 +89,24 @@
 <script>
 
 
-var graph, originalGraphHTML;
-
-
-setTimeout(function() {
-    document.getElementById("mybutt").addEventListener('click', function () {
-        gen()
-    });
-
-    graph = document.getElementById("graph");
-    originalGraphHTML = graph.innerHTML;
-
-    gen();
-}, 500);
-
-
-
-let max = 5;
-
-let scale = [
-    "Absence",
-    "Carence",
-    "Carence",
-    "Point Faible",
-    "Point Faible",
-    "Equilibre",
-    "Point fort",
-    "Point fort",
-    "Dominance",
-    "Dominance",
-    "Essence"
-]
-
-
-
-let tree = {
-    Equilibre: {
-        value: 0,
-        children: {
-            Destin: {
-                value: 0,
-                children: {
-                    Chance: {
-                        value: 0,
-                    },
-                    Karma: {
-                        value: 0,
-                    }
-                }
-            },
-            Personnel: {
-                value: 0,
-                children: {
-                    Inspire: {
-                        value: 0,
-                        children: {
-                            Perception: {
-                                value: 0,
-                                children: {
-                                    Vue: {
-                                        value: 0,
-                                    },
-                                    "Ouïe": {
-                                        value: 0,
-                                    },
-                                    Odorat: {
-                                        value: 0,
-                                    },
-                                }
-                            },
-                            Empathie: {
-                                value: 0,
-                            },
-                            Intuition: {
-                                value: 0,
-                            },
-                        }
-                    },
-                    "Intérieur": {
-                        value: 0,
-                        children: {
-                            Intellect: {
-                                value: 0,
-                                children: {
-                                    Langage: {
-                                        value: 0,
-                                    },
-                                    Logique: {
-                                        value: 0,
-                                    },
-                                }
-                            },
-                            "Contrôle": {
-                                value: 0,
-                            },
-                            "Santé Mentale": {
-                                value: 0,
-                            },
-                        }
-                    },
-                    Expire: {
-                        value: 0,
-                        children: {
-                            "Volonté": {
-                                value: 0,
-                            },
-                            Hargne: {
-                                value: 0,
-                            },
-                            "Discrétion": {
-                                value: 0,
-                            },
-                        }
-                    },
-                    "Extérieur": {
-                        value: 0,
-                        children: {
-                            "Sociabilité": {
-                                value: 0,
-                            },
-                            Connaissance: {
-                                value: 0,
-                                children: {
-                                    Technique: {
-                                        value: 0,
-                                    },
-                                    Histoire: {
-                                        value: 0,
-                                    },
-                                    "Géographie": {
-                                        value: 0,
-                                    },
-                                    Politique: {
-                                        value: 0,
-                                    },
-                                    Langues: {
-                                        value: 0,
-                                    },
-                                }
-                            },
-                            Charisme: {
-                                value: 0,
-                            },
-                        }
-                    }
-                }
-            },
-            Corporel: {
-                value: 0,
-                children: {
-                    "Être": {
-                        value: 0,
-                        children: {
-                            Force: {
-                                value: 0,
-                            },
-                            Souplesse: {
-                                value: 0,
-                            },
-                            Constitution: {
-                                value: 0,
-                            },
-                            "Réflexe": {
-                                value: 0,
-                            },
-                            Endurance: {
-                                value: 0,
-                            },
-                        }
-                    },
-                    Faire: {
-                        value: 0,
-                        children: {
-                            "Combat Rapproché": {
-                                value: 0,
-                            },
-                            "Tir Visé": {
-                                value: 0,
-                            },
-                            "Dextérité": {
-                                value: 0,
-                            },
-                            "Athlétisme": {
-                                value: 0,
-                            },
-                            "Agilité": {
-                                value: 0,
-                            },
-                        }
-                    },
-                }
-            }
-        }
-    }
-}
-
-
-function D(n) {
-
-    return Math.floor(n * Math.random()) +1;
-}
-
-function rnd() {
-
-    return D(6) - D(6);
-    
-    // return D(11) - 6;
-    
-    // return Math.floor((max * 2 + 1) * Math.random()) - max;
-}
-
-
-function isMax(val) {
-
-    return val == max || val == -max;
-}
-
-
-function match(equilibrium, values) {
-
-    let countMax = 0;
-    if (isMax(equilibrium)) ++countMax;
-    for (let v of values)
-        if (isMax(v)) ++countMax;
-    if (countMax > 1) return false;
-/*
-    let countZero = 0;
-    for (let v of values)
-        if (v == 0) ++countZero;
-    if (countZero > 1) return false;
-*/
-    let sum = 0;
-    for (let v of values) sum += v;
-
-    return sum == equilibrium;
-}
-
-
-function fillChildren(node) {
-
-    if (!node.children) return;
-
-    let numberOfChildren = Object.keys(node.children).length;
-
-    let cValues = [];
-    for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
-
-    while (!match(node.value, cValues)) {
-        cValues = [];
-        for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
-    }
-
-    for (let c = 0; c < numberOfChildren; c++) {
-
-        node.children[Object.keys(node.children)[c]].value = cValues[c];
-
-        fillChildren(node.children[Object.keys(node.children)[c]]);
-    }
-}
-
-
-function prettyPrint(key, value, indent = 0) {
-
-	let result = '<span style="color:#C0C0C0">' + '|   '.repeat(indent) + '</span>' + key + ' <span style="font-weight:bold;color:#404040">' + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + '</span> <span style="color:#808080">(' + scale[value.value+max] + ')</span>\n';
-
-    for (let child in value.children)
-        result += prettyPrint(child, value.children[child], indent + 1);
-    
-    return result;
-}
-
-
-function replaceNames(html = '', key, value) {
-
-    let regexp = new RegExp('('+key+')', 'g');
-
-    console.log("html", html);
-    html = html.replace(regexp, "$1 " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '−') + Math.abs(value.value));
-
-    for (let child in value.children)
-        html = replaceNames(html, child, value.children[child]);
-
-    return html;
-}
-
-
-function gen() {
-
-    fillChildren(tree.Equilibre);
-    document.getElementById("feuilleperso").innerHTML =
-        prettyPrint("Equilibre", tree.Equilibre);
-
-    let graphHTML = originalGraphHTML;
-
-    graphHTML = replaceNames(graphHTML, "Equilibre", tree.Equilibre);
-
-    graph.innerHTML = graphHTML;
-}
-
-</script>
-</p>
-<p id="graph"><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> <svg style="width: 120%; position: relative; left: -10%;" width="1099pt" height="1105pt" viewbox="0.00 0.00 1098.71 1105.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg></a></p>
-<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, et sont obtenus en lançant <strong>D6 moins D6</strong> jusqu'à obtenir des Mesures qui respectent les trois règles suivantes.</a></p>
-<ul>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">La somme des Mesures "sœurs" est égale à leur Mesure "parente". </a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Il ne peut pas y avoir plusieurs Mesures "sœurs" extrêmes (à -5 ou +5).</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Une Mesure "parente" qui serait elle-même extrême, ne peut avoir de Mesure "fille" qui serait elle aussi extrême.</a></li>
-</ul>
-<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> </a></p>
-<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><button id="mybutt">Générer une nouvelle liste</button></a></p>
-<pre id="feuilleperso" style="font-size: 75%;"> </pre>
-<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Les Mesures méritent une courte explication, pour confirmer que nous parlons de la même chose.</a></p>
-<ul style="list-style-type: square;">
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Équilibre</strong> - La racine de tout être vivant, qui s'équilibre toujours naturellement.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Destin</strong> - Assez simplement, quelque chose de pourtant indéfinissable, mais qu'on connaît tous : cette part qui ne dépend pas entièrement de nous.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Chance</strong> - La chance, qui finit par tourner quand on en a trop souvent besoin.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Karma</strong> - Le karma augmente si le personnage agit selon sa nature, et diminue s'il va à l'encontre de sa nature. Il s'équilibre ensuite par des événements imprévisibles positifs ou négatifs.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Personnel</strong> - La qualité de la façon d'être du personnage, sa façon d'agir, ses choix.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Inspire</strong> - La capacité du personnage a recevoir des informations de son environnement.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Perception</strong> - La précision des capteurs sensoriels du corps du personnage, et sa capacité à en interpréter les données.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Vue</strong> - Le personnage voit-il bien et loin.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Ouïe</strong> - Le personnage entend-il bien et loin, perçoit-il les nuances légères, a-t-il l'oreille musicale.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Odorat</strong> - Le personnage a-t-il le nez fin.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Empathie</strong> - Le personnage peut-il facilement comprendre les gens, et percevoir ce qui se passe en eux.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Intuition</strong> - Le personnage perçoit-il le sens de l'histoire dont il est le protagoniste, peut-il sentir ce qui va se passer.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Intérieur</strong> - La puissance mentale du personnage, sa capacité à traiter les informations.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Intellect</strong> - Une certaine forme d'intelligence "procédurale" du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Langage</strong> - L'aisance littéraire, ou linguistique, du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Logique</strong> - L'aisance scientifique, ou mathématique, du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Contrôle</strong> - La faculté du personnage de contrôler consciemment et volontairement son comportement.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Santé Mentale</strong> - La stabilité, la cohérence du personnage, et sa résilience.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Expire</strong> - La facilité avec laquelle le personnage modifie son environnement.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Volonté</strong> - La puissance avec laquelle le personnage peut imprimer ses choix sur son environnement, ou résister aux choix que son environnement tente d'imprimer en lui.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Hargne</strong> - La combativité mentale du personnage, la violente vigueur de son influence.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Discrétion</strong> - La capacité du personnage à passer inaperçu s'il le souhaite.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Extérieur</strong> - La qualité du rapport du personnage au monde qui l'entoure.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Sociabilité</strong> - L'aisance sociale du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Connaissance</strong> - La quantité de connaissances que le personnage a accumulé.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Technique</strong> - Les connaissances techniques du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Histoire</strong> - Les connaissances historiques du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Géographie</strong> - les connaissances géographiques du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Politique</strong> - Les connaissances politiques du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Langues</strong> - Les langues étrangères que connait le personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Charisme</strong> - Le rayonnement, l'aura naturelle du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Corporel</strong> - Ce qui concerne les aptitudes physiques du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Être</strong> - Les capacités du corps que la nature a donné au personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Force</strong> - La force musculaire brute du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Souplesse</strong> - La capacité du personnage à se contorsionner.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Constitution</strong> - La solidité globale du corps du personnage : la densité des os, l'épaisseur de la peau.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Réflexe</strong> - La réactivité naturelle involontaire du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Endurance</strong> - La puissance cardiaque, la résistance à l'effort prolongé, aux maladies, aux infections.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Faire</strong> - Les capacités corporelles que le personnage s'est donné.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Combat Rapproché</strong> - La science ou l'expérience du combat de mêlée.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Tir Visé</strong> - Le savoir viser juste du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Dextérité</strong> - L'habileté manuelle du personnage.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Athlétisme</strong> - La capacité du personnage à mobiliser son corps de façon coordonnée, efficace et puissante : courir vite, sauter loin, grimper une paroi, ...etc.</a></li>
-<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Agilité</strong> - La mobilité féline du personnage : retomber sur ses pieds, courir sur le mur, glisser entre les jambes d'un adversaire, ...etc.</a></li>
-</ul>
-<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> </a></p>
-<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> </a></p>
-<p>
-<script>
-        
-        
         var graph, originalGraphHTML;
-        
-        
-        setTimeout(function() {
+
+
+        setTimeout(function () {
             document.getElementById("mybutt").addEventListener('click', function () {
                 gen()
             });
-        
+
             graph = document.getElementById("graph");
             originalGraphHTML = graph.innerHTML;
-        
+
             gen();
         }, 500);
-        
-        
-        
+
+
+
         let max = 5;
-        
+
         let scale = [
             "Absence",
             "Carence",
@@ -484,9 +120,9 @@ function gen() {
             "Dominance",
             "Essence"
         ]
-        
-        
-        
+
+
+
         let tree = {
             Equilibre: {
                 value: 0,
@@ -647,113 +283,113 @@ function gen() {
                 }
             }
         }
-        
-        
+
+
         function D(n) {
-        
-            return Math.floor(n * Math.random()) +1;
+
+            return Math.floor(n * Math.random()) + 1;
         }
-        
+
         function rnd() {
-        
+
             return D(6) - D(6);
-            
+
             // return D(11) - 6;
-            
+
             // return Math.floor((max * 2 + 1) * Math.random()) - max;
         }
-        
-        
+
+
         function isMax(val) {
-        
+
             return val == max || val == -max;
         }
-        
-        
+
+
         function match(equilibrium, values) {
-        
+
             let countMax = 0;
             if (isMax(equilibrium)) ++countMax;
             for (let v of values)
                 if (isMax(v)) ++countMax;
             if (countMax > 1) return false;
-        /*
-            let countZero = 0;
-            for (let v of values)
-                if (v == 0) ++countZero;
-            if (countZero > 1) return false;
-        */
+            /*
+                let countZero = 0;
+                for (let v of values)
+                    if (v == 0) ++countZero;
+                if (countZero > 1) return false;
+            */
             let sum = 0;
             for (let v of values) sum += v;
-        
+
             return sum == equilibrium;
         }
-        
-        
+
+
         function fillChildren(node) {
-        
+
             if (!node.children) return;
-        
+
             let numberOfChildren = Object.keys(node.children).length;
-        
+
             let cValues = [];
             for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
-        
+
             while (!match(node.value, cValues)) {
                 cValues = [];
                 for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
             }
-        
+
             for (let c = 0; c < numberOfChildren; c++) {
-        
+
                 node.children[Object.keys(node.children)[c]].value = cValues[c];
-        
+
                 fillChildren(node.children[Object.keys(node.children)[c]]);
             }
         }
-        
-        
+
+
         function prettyPrint(key, value, indent = 0) {
-        
-            let result = '<span style="color:#C0C0C0">' + '|   '.repeat(indent) + '</span>' + key + ' <span style="font-weight:bold;color:#404040">' + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + '</span> <span style="color:#808080">(' + scale[value.value+max] + ')</span>\n';
-        
+
+            let result = '<span style="color:#C0C0C0">' + '|   '.repeat(indent) + '</span>' + key + ' <span style="font-weight:bold;color:#404040">' + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + '</span> <span style="color:#808080">(' + scale[value.value + max] + ')</span>\n';
+
             for (let child in value.children)
                 result += prettyPrint(child, value.children[child], indent + 1);
-            
+
             return result;
         }
-        
-        
+
+
         function replaceNames(html = '', key, value) {
-        
-            let regexp = new RegExp('('+key+')', 'g');
-        
+
+            let regexp = new RegExp('(' + key + ')', 'g');
+
             console.log("html", html);
             html = html.replace(regexp, "$1 " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '−') + Math.abs(value.value));
-        
+
             for (let child in value.children)
                 html = replaceNames(html, child, value.children[child]);
-        
+
             return html;
         }
-        
-        
+
+
         function gen() {
-        
+
             fillChildren(tree.Equilibre);
             document.getElementById("feuilleperso").innerHTML =
                 prettyPrint("Equilibre", tree.Equilibre);
-        
+
             let graphHTML = originalGraphHTML;
-        
+
             graphHTML = replaceNames(graphHTML, "Equilibre", tree.Equilibre);
-        
+
             graph.innerHTML = graphHTML;
         }
-        
-        </script>
+
+    </script>
 </p>
-<p id="graph"><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> <svg style="width: 100%;" width="1099pt" height="1105pt" viewbox="0.00 0.00 1098.71 1105.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1101.4146)"> 
+<p id="graph"><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> <!--?xml version="1.0" encoding="UTF-8" ?--> <svg style="width: 100%;" width="1099pt" height="1105pt" viewbox="0.00 0.00 1098.71 1105.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1101.4146)"> 
 <title>perso</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1101.4146 1094.7053,-1101.4146 1094.7053,4 -4,4"></polygon> <!-- Equilibre. --> <g id="node1" class="node"> 
 <title>Equilibre.</title>
@@ -825,15 +461,15 @@ function gen() {
 <title>Santé Mentale.</title>
 <ellipse fill="none" stroke="#c0c0c0" cx="282.9683" cy="-864.1936" rx="69.7487" ry="69.7487"></ellipse> <text text-anchor="middle" x="282.9683" y="-859.9936" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Santé Mentale.</text> </g> <!-- Intérieur.&#45;&gt;Santé Mentale. --> <g id="edge18" class="edge"> 
 <title>Intérieur.-&gt;Santé Mentale.</title>
-<path fill="none" stroke="#000000" d="M515.0411,-749.2779C499.6012,-770.8568 478.3246,-796.5919 454.4013,-814.2684 427.63,-834.0494 393.1556,-846.0198 362.1503,-853.2518"></path> <polygon fill="#000000" stroke="#000000" points="361.2337,-849.8696 352.2197,-855.4372 362.7383,-856.706 361.2337,-849.8696"></polygon> </g> <!-- Volonté. --> <g id="node22" class="node"> 
+<path fill="none" stroke="#000000" d="M515.2095,-749.1021C499.7392,-770.7698 478.3569,-796.6696 454.2739,-814.3945 427.4893,-834.1078 393.0351,-846.0452 362.0579,-853.2616"></path> <polygon fill="#000000" stroke="#000000" points="361.1519,-849.8771 352.1366,-855.4425 362.6549,-856.7138 361.1519,-849.8771"></polygon> </g> <!-- Volonté. --> <g id="node22" class="node"> 
 <title>Volonté.</title>
 <ellipse fill="none" stroke="#c0c0c0" cx="93.9346" cy="-1027.319" rx="45.455" ry="45.455"></ellipse> <text text-anchor="middle" x="93.9346" y="-1023.119" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Volonté.</text> </g> <!-- Expire.&#45;&gt;Volonté. --> <g id="edge21" class="edge"> 
 <title>Expire.-&gt;Volonté.</title>
-<path fill="none" stroke="#000000" d="M379.0385,-651.2597C333.7609,-700.574 245.5711,-796.9835 232.6627,-813.773 190.94,-868.0401 148.9393,-934.7796 122.2592,-979.0535"></path> <polygon fill="#000000" stroke="#000000" points="119.1115,-977.497 116.9682,-987.8728 125.1141,-981.0982 119.1115,-977.497"></polygon> </g> <!-- Hargne. --> <g id="node23" class="node"> 
+<path fill="none" stroke="#000000" d="M379.0657,-651.2339C333.8343,-700.5042 245.7341,-796.8274 232.8367,-813.6 190.9443,-868.0791 148.7612,-935.1115 122.0572,-979.4173"></path> <polygon fill="#000000" stroke="#000000" points="118.9077,-977.8636 116.7635,-988.2392 124.91,-981.4654 118.9077,-977.8636"></polygon> </g> <!-- Hargne. --> <g id="node23" class="node"> 
 <title>Hargne.</title>
 <ellipse fill="none" stroke="#c0c0c0" cx="55.5063" cy="-801.5853" rx="41.735" ry="41.735"></ellipse> <text text-anchor="middle" x="55.5063" y="-797.3853" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Hargne.</text> </g> <!-- Expire.&#45;&gt;Hargne. --> <g id="edge22" class="edge"> 
 <title>Expire.-&gt;Hargne.</title>
-<path fill="none" stroke="#000000" d="M382.4894,-654.2283C363.6223,-678.3359 335.1508,-710.798 304.1782,-732.3035 244.5212,-773.7257 160.744,-790.468 107.2904,-797.1776"></path> <polygon fill="#000000" stroke="#000000" points="106.8673,-793.7032 97.3477,-798.3538 107.6897,-800.6547 106.8673,-793.7032"></polygon> </g> <!-- Discrétion. --> <g id="node24" class="node"> 
+<path fill="none" stroke="#000000" d="M382.475,-654.3169C363.5891,-678.4829 335.0746,-711.005 304.0031,-732.4763 244.4273,-773.6448 160.9555,-790.3786 107.553,-797.1205"></path> <polygon fill="#000000" stroke="#000000" points="106.8066,-793.6844 97.2894,-798.3399 107.6326,-800.6356 106.8066,-793.6844"></polygon> </g> <!-- Discrétion. --> <g id="node24" class="node"> 
 <title>Discrétion.</title>
 <ellipse fill="none" stroke="#c0c0c0" cx="264.8015" cy="-692.5711" rx="54.1789" ry="54.1789"></ellipse> <text text-anchor="middle" x="264.8015" y="-688.3711" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Discrétion.</text> </g> <!-- Expire.&#45;&gt;Discrétion. --> <g id="edge23" class="edge"> 
 <title>Expire.-&gt;Discrétion.</title>
@@ -893,7 +529,7 @@ function gen() {
 <title>Force.</title>
 <ellipse fill="none" stroke="#c0c0c0" cx="375.5438" cy="-40.298" rx="35.3716" ry="35.3716"></ellipse> <text text-anchor="middle" x="375.5438" y="-36.098" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Force.</text> </g> <!-- Être.&#45;&gt;Force. --> <g id="edge34" class="edge"> 
 <title>Être.-&gt;Force.</title>
-<path fill="none" stroke="#000000" d="M563.4449,-293.903C557.8522,-263.8513 545.9492,-216.6117 522.5965,-182.1968 491.8361,-136.8654 444.6822,-94.5935 412.1027,-68.183"></path> <polygon fill="#000000" stroke="#000000" points="414.1465,-65.3357 404.1526,-61.818 409.7715,-70.8002 414.1465,-65.3357"></polygon> </g> <!-- Souplesse. --> <g id="node36" class="node"> 
+<path fill="none" stroke="#000000" d="M563.4458,-293.9104C557.855,-263.8659 545.9573,-216.6358 522.62,-182.2206 491.777,-136.7367 444.4227,-94.3427 411.8238,-67.9471"></path> <polygon fill="#000000" stroke="#000000" points="413.8687,-65.1009 403.8728,-61.5889 409.4969,-70.5678 413.8687,-65.1009"></polygon> </g> <!-- Souplesse. --> <g id="node36" class="node"> 
 <title>Souplesse.</title>
 <ellipse fill="none" stroke="#c0c0c0" cx="484.51" cy="-220.0146" rx="52.1456" ry="52.1456"></ellipse> <text text-anchor="middle" x="484.51" y="-215.8146" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Souplesse.</text> </g> <!-- Être.&#45;&gt;Souplesse. --> <g id="edge35" class="edge"> 
 <title>Être.-&gt;Souplesse.</title>
@@ -929,8 +565,7 @@ function gen() {
 <title>Agilité.</title>
 <ellipse fill="none" stroke="#c0c0c0" cx="1028.5024" cy="-550.2126" rx="40.8747" ry="40.8747"></ellipse> <text text-anchor="middle" x="1028.5024" y="-546.0126" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Agilité.</text> </g> <!-- Faire.&#45;&gt;Agilité. --> <g id="edge43" class="edge"> 
 <title>Faire.-&gt;Agilité.</title>
-<path fill="none" stroke="#000000" d="M848.5711,-356.5639C883.9217,-394.6095 952.0826,-467.9669 993.6121,-512.6624"></path> <polygon fill="#000000" stroke="#000000" points="991.1699,-515.1759 1000.5408,-520.1193 996.2979,-510.4111 991.1699,-515.1759"></polygon> </g> </g> </svg></a></p>
-<p> </p>
+<path fill="none" stroke="#000000" d="M848.5711,-356.5639C883.9217,-394.6095 952.0826,-467.9669 993.6121,-512.6624"></path> <polygon fill="#000000" stroke="#000000" points="991.1699,-515.1759 1000.5408,-520.1193 996.2979,-510.4111 991.1699,-515.1759"></polygon> </g> </g> </svg> </a></p>
             ]]>
         </content>
     </entry>
