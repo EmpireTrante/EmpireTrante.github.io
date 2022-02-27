@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T23:57:18+01:00</updated>
+    <updated>2022-02-28T00:01:55+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T23:57:18+01:00</updated>
+        <updated>2022-02-28T00:01:55+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
@@ -390,7 +390,370 @@ function gen() {
 
 </script>
 </p>
-<p id="graph"><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> <svg style="width: 120%; position: relative; left: -10%;" width="1099pt" height="1105pt" viewbox="0.00 0.00 1098.71 1105.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1101.4146)"> 
+<p id="graph"><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> <svg style="width: 120%; position: relative; left: -10%;" width="1099pt" height="1105pt" viewbox="0.00 0.00 1098.71 1105.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg></a></p>
+<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, et sont obtenus en lançant <strong>D6 moins D6</strong> jusqu'à obtenir des Mesures qui respectent les trois règles suivantes.</a></p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">La somme des Mesures "sœurs" est égale à leur Mesure "parente". </a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Il ne peut pas y avoir plusieurs Mesures "sœurs" extrêmes (à -5 ou +5).</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Une Mesure "parente" qui serait elle-même extrême, ne peut avoir de Mesure "fille" qui serait elle aussi extrême.</a></li>
+</ul>
+<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> </a></p>
+<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><button id="mybutt">Générer une nouvelle liste</button></a></p>
+<pre id="feuilleperso" style="font-size: 75%;"> </pre>
+<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg">Les Mesures méritent une courte explication, pour confirmer que nous parlons de la même chose.</a></p>
+<ul style="list-style-type: square;">
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Équilibre</strong> - La racine de tout être vivant, qui s'équilibre toujours naturellement.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Destin</strong> - Assez simplement, quelque chose de pourtant indéfinissable, mais qu'on connaît tous : cette part qui ne dépend pas entièrement de nous.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Chance</strong> - La chance, qui finit par tourner quand on en a trop souvent besoin.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Karma</strong> - Le karma augmente si le personnage agit selon sa nature, et diminue s'il va à l'encontre de sa nature. Il s'équilibre ensuite par des événements imprévisibles positifs ou négatifs.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Personnel</strong> - La qualité de la façon d'être du personnage, sa façon d'agir, ses choix.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Inspire</strong> - La capacité du personnage a recevoir des informations de son environnement.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Perception</strong> - La précision des capteurs sensoriels du corps du personnage, et sa capacité à en interpréter les données.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Vue</strong> - Le personnage voit-il bien et loin.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Ouïe</strong> - Le personnage entend-il bien et loin, perçoit-il les nuances légères, a-t-il l'oreille musicale.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Odorat</strong> - Le personnage a-t-il le nez fin.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Empathie</strong> - Le personnage peut-il facilement comprendre les gens, et percevoir ce qui se passe en eux.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Intuition</strong> - Le personnage perçoit-il le sens de l'histoire dont il est le protagoniste, peut-il sentir ce qui va se passer.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Intérieur</strong> - La puissance mentale du personnage, sa capacité à traiter les informations.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Intellect</strong> - Une certaine forme d'intelligence "procédurale" du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Langage</strong> - L'aisance littéraire, ou linguistique, du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Logique</strong> - L'aisance scientifique, ou mathématique, du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Contrôle</strong> - La faculté du personnage de contrôler consciemment et volontairement son comportement.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Santé Mentale</strong> - La stabilité, la cohérence du personnage, et sa résilience.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Expire</strong> - La facilité avec laquelle le personnage modifie son environnement.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Volonté</strong> - La puissance avec laquelle le personnage peut imprimer ses choix sur son environnement, ou résister aux choix que son environnement tente d'imprimer en lui.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Hargne</strong> - La combativité mentale du personnage, la violente vigueur de son influence.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Discrétion</strong> - La capacité du personnage à passer inaperçu s'il le souhaite.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Extérieur</strong> - La qualité du rapport du personnage au monde qui l'entoure.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Sociabilité</strong> - L'aisance sociale du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Connaissance</strong> - La quantité de connaissances que le personnage a accumulé.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Technique</strong> - Les connaissances techniques du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Histoire</strong> - Les connaissances historiques du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Géographie</strong> - les connaissances géographiques du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Politique</strong> - Les connaissances politiques du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Langues</strong> - Les langues étrangères que connait le personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Charisme</strong> - Le rayonnement, l'aura naturelle du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Corporel</strong> - Ce qui concerne les aptitudes physiques du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Être</strong> - Les capacités du corps que la nature a donné au personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Force</strong> - La force musculaire brute du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Souplesse</strong> - La capacité du personnage à se contorsionner.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Constitution</strong> - La solidité globale du corps du personnage : la densité des os, l'épaisseur de la peau.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Réflexe</strong> - La réactivité naturelle involontaire du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Endurance</strong> - La puissance cardiaque, la résistance à l'effort prolongé, aux maladies, aux infections.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Faire</strong> - Les capacités corporelles que le personnage s'est donné.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Combat Rapproché</strong> - La science ou l'expérience du combat de mêlée.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Tir Visé</strong> - Le savoir viser juste du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Dextérité</strong> - L'habileté manuelle du personnage.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Athlétisme</strong> - La capacité du personnage à mobiliser son corps de façon coordonnée, efficace et puissante : courir vite, sauter loin, grimper une paroi, ...etc.</a></li>
+<li><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><strong>Agilité</strong> - La mobilité féline du personnage : retomber sur ses pieds, courir sur le mur, glisser entre les jambes d'un adversaire, ...etc.</a></li>
+</ul>
+<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> </a></p>
+<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> </a></p>
+<p>
+<script>
+        
+        
+        var graph, originalGraphHTML;
+        
+        
+        setTimeout(function() {
+            document.getElementById("mybutt").addEventListener('click', function () {
+                gen()
+            });
+        
+            graph = document.getElementById("graph");
+            originalGraphHTML = graph.innerHTML;
+        
+            gen();
+        }, 500);
+        
+        
+        
+        let max = 5;
+        
+        let scale = [
+            "Absence",
+            "Carence",
+            "Carence",
+            "Point Faible",
+            "Point Faible",
+            "Equilibre",
+            "Point fort",
+            "Point fort",
+            "Dominance",
+            "Dominance",
+            "Essence"
+        ]
+        
+        
+        
+        let tree = {
+            Equilibre: {
+                value: 0,
+                children: {
+                    Destin: {
+                        value: 0,
+                        children: {
+                            Chance: {
+                                value: 0,
+                            },
+                            Karma: {
+                                value: 0,
+                            }
+                        }
+                    },
+                    Personnel: {
+                        value: 0,
+                        children: {
+                            Inspire: {
+                                value: 0,
+                                children: {
+                                    Perception: {
+                                        value: 0,
+                                        children: {
+                                            Vue: {
+                                                value: 0,
+                                            },
+                                            "Ouïe": {
+                                                value: 0,
+                                            },
+                                            Odorat: {
+                                                value: 0,
+                                            },
+                                        }
+                                    },
+                                    Empathie: {
+                                        value: 0,
+                                    },
+                                    Intuition: {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                            "Intérieur": {
+                                value: 0,
+                                children: {
+                                    Intellect: {
+                                        value: 0,
+                                        children: {
+                                            Langage: {
+                                                value: 0,
+                                            },
+                                            Logique: {
+                                                value: 0,
+                                            },
+                                        }
+                                    },
+                                    "Contrôle": {
+                                        value: 0,
+                                    },
+                                    "Santé Mentale": {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                            Expire: {
+                                value: 0,
+                                children: {
+                                    "Volonté": {
+                                        value: 0,
+                                    },
+                                    Hargne: {
+                                        value: 0,
+                                    },
+                                    "Discrétion": {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                            "Extérieur": {
+                                value: 0,
+                                children: {
+                                    "Sociabilité": {
+                                        value: 0,
+                                    },
+                                    Connaissance: {
+                                        value: 0,
+                                        children: {
+                                            Technique: {
+                                                value: 0,
+                                            },
+                                            Histoire: {
+                                                value: 0,
+                                            },
+                                            "Géographie": {
+                                                value: 0,
+                                            },
+                                            Politique: {
+                                                value: 0,
+                                            },
+                                            Langues: {
+                                                value: 0,
+                                            },
+                                        }
+                                    },
+                                    Charisme: {
+                                        value: 0,
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    Corporel: {
+                        value: 0,
+                        children: {
+                            "Être": {
+                                value: 0,
+                                children: {
+                                    Force: {
+                                        value: 0,
+                                    },
+                                    Souplesse: {
+                                        value: 0,
+                                    },
+                                    Constitution: {
+                                        value: 0,
+                                    },
+                                    "Réflexe": {
+                                        value: 0,
+                                    },
+                                    Endurance: {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                            Faire: {
+                                value: 0,
+                                children: {
+                                    "Combat Rapproché": {
+                                        value: 0,
+                                    },
+                                    "Tir Visé": {
+                                        value: 0,
+                                    },
+                                    "Dextérité": {
+                                        value: 0,
+                                    },
+                                    "Athlétisme": {
+                                        value: 0,
+                                    },
+                                    "Agilité": {
+                                        value: 0,
+                                    },
+                                }
+                            },
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        function D(n) {
+        
+            return Math.floor(n * Math.random()) +1;
+        }
+        
+        function rnd() {
+        
+            return D(6) - D(6);
+            
+            // return D(11) - 6;
+            
+            // return Math.floor((max * 2 + 1) * Math.random()) - max;
+        }
+        
+        
+        function isMax(val) {
+        
+            return val == max || val == -max;
+        }
+        
+        
+        function match(equilibrium, values) {
+        
+            let countMax = 0;
+            if (isMax(equilibrium)) ++countMax;
+            for (let v of values)
+                if (isMax(v)) ++countMax;
+            if (countMax > 1) return false;
+        /*
+            let countZero = 0;
+            for (let v of values)
+                if (v == 0) ++countZero;
+            if (countZero > 1) return false;
+        */
+            let sum = 0;
+            for (let v of values) sum += v;
+        
+            return sum == equilibrium;
+        }
+        
+        
+        function fillChildren(node) {
+        
+            if (!node.children) return;
+        
+            let numberOfChildren = Object.keys(node.children).length;
+        
+            let cValues = [];
+            for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
+        
+            while (!match(node.value, cValues)) {
+                cValues = [];
+                for (let c = 0; c < numberOfChildren; c++) cValues.push(rnd())
+            }
+        
+            for (let c = 0; c < numberOfChildren; c++) {
+        
+                node.children[Object.keys(node.children)[c]].value = cValues[c];
+        
+                fillChildren(node.children[Object.keys(node.children)[c]]);
+            }
+        }
+        
+        
+        function prettyPrint(key, value, indent = 0) {
+        
+            let result = '<span style="color:#C0C0C0">' + '|   '.repeat(indent) + '</span>' + key + ' <span style="font-weight:bold;color:#404040">' + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + '</span> <span style="color:#808080">(' + scale[value.value+max] + ')</span>\n';
+        
+            for (let child in value.children)
+                result += prettyPrint(child, value.children[child], indent + 1);
+            
+            return result;
+        }
+        
+        
+        function replaceNames(html = '', key, value) {
+        
+            let regexp = new RegExp('('+key+')', 'g');
+        
+            console.log("html", html);
+            html = html.replace(regexp, "$1 " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '−') + Math.abs(value.value));
+        
+            for (let child in value.children)
+                html = replaceNames(html, child, value.children[child]);
+        
+            return html;
+        }
+        
+        
+        function gen() {
+        
+            fillChildren(tree.Equilibre);
+            document.getElementById("feuilleperso").innerHTML =
+                prettyPrint("Equilibre", tree.Equilibre);
+        
+            let graphHTML = originalGraphHTML;
+        
+            graphHTML = replaceNames(graphHTML, "Equilibre", tree.Equilibre);
+        
+            graph.innerHTML = graphHTML;
+        }
+        
+        </script>
+</p>
+<p id="graph"><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"> <svg style="width: 100%;" width="1099pt" height="1105pt" viewbox="0.00 0.00 1098.71 1105.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1101.4146)"> 
 <title>perso</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-1101.4146 1094.7053,-1101.4146 1094.7053,4 -4,4"></polygon> <!-- Equilibre. --> <g id="node1" class="node"> 
 <title>Equilibre.</title>
@@ -567,6 +930,7 @@ function gen() {
 <ellipse fill="none" stroke="#c0c0c0" cx="1028.5024" cy="-550.2126" rx="40.8747" ry="40.8747"></ellipse> <text text-anchor="middle" x="1028.5024" y="-546.0126" font-family="Segoe UI, Roboto, Arial" font-size="14.00" fill="#000000">Agilité.</text> </g> <!-- Faire.&#45;&gt;Agilité. --> <g id="edge43" class="edge"> 
 <title>Faire.-&gt;Agilité.</title>
 <path fill="none" stroke="#000000" d="M848.5711,-356.5639C883.9217,-394.6095 952.0826,-467.9669 993.6121,-512.6624"></path> <polygon fill="#000000" stroke="#000000" points="991.1699,-515.1759 1000.5408,-520.1193 996.2979,-510.4111 991.1699,-515.1759"></polygon> </g> </g> </svg></a></p>
+<p> </p>
             ]]>
         </content>
     </entry>
