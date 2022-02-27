@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T13:29:55+01:00</updated>
+    <updated>2022-02-27T13:36:18+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,17 +17,17 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T13:29:55+01:00</updated>
+        <updated>2022-02-27T13:36:18+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
-                    Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Générer une nouvelle liste 
+                    Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires. Générer une nouvelle liste 
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
-                <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié.</p>
+                <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires.</p>
 <p> </p>
 <p> </p>
 <p> </p>
@@ -90,7 +90,7 @@ let tree = {
                                     Vue: {
                                         value: 0,
                                     },
-                                    Ouie: {
+                                    "Ouïe": {
                                         value: 0,
                                     },
                                     Odorat: {
@@ -106,7 +106,7 @@ let tree = {
                             },
                         }
                     },
-                    Interieur: {
+                    "Intérieur": {
                         value: 0,
                         children: {
                             Intellect: {
@@ -120,10 +120,10 @@ let tree = {
                                     },
                                 }
                             },
-                            Controle: {
+                            "Contrôle": {
                                 value: 0,
                             },
-                            SanteMentale: {
+                            "Santé Mentale": {
                                 value: 0,
                             },
                         }
@@ -131,21 +131,21 @@ let tree = {
                     Expire: {
                         value: 0,
                         children: {
-                            Volonte: {
+                            "Volonté": {
                                 value: 0,
                             },
                             Hargne: {
                                 value: 0,
                             },
-                            Discretion: {
+                            "Discrétion": {
                                 value: 0,
                             },
                         }
                     },
-                    Exterieur: {
+                    "Extérieur": {
                         value: 0,
                         children: {
-                            Sociabilite: {
+                            "Sociabilité": {
                                 value: 0,
                             },
                             Connaissance: {
@@ -157,7 +157,7 @@ let tree = {
                                     Histoire: {
                                         value: 0,
                                     },
-                                    Geographie: {
+                                    "Géographie": {
                                         value: 0,
                                     },
                                     Politique: {
@@ -178,7 +178,7 @@ let tree = {
             Corporel: {
                 value: 0,
                 children: {
-                    Etre: {
+                    "Être": {
                         value: 0,
                         children: {
                             Force: {
@@ -190,7 +190,7 @@ let tree = {
                             Constitution: {
                                 value: 0,
                             },
-                            Reflexe: {
+                            "Réflexe": {
                                 value: 0,
                             },
                             Endurance: {
@@ -201,19 +201,19 @@ let tree = {
                     Faire: {
                         value: 0,
                         children: {
-                            CombatRapproche: {
+                            "Combat Rapproché": {
                                 value: 0,
                             },
-                            TirVise: {
+                            "Tir Visé": {
                                 value: 0,
                             },
-                            Dexterite: {
+                            "Dexterité": {
                                 value: 0,
                             },
-                            Athletisme: {
+                            "Athlétisme": {
                                 value: 0,
                             },
-                            Agilite: {
+                            "Agilité": {
                                 value: 0,
                             },
                         }
