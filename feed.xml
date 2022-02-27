@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T12:55:56+01:00</updated>
+    <updated>2022-02-27T13:05:26+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T12:55:56+01:00</updated>
+        <updated>2022-02-27T13:05:26+01:00</updated>
             <summary>
                 <![CDATA[
                     Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Générer une nouvelle liste 
@@ -30,7 +30,7 @@
 <p> </p>
 <p> </p>
 <p><button id="mybutt">Générer une nouvelle liste</button></p>
-<pre id="feuilleperso">    
+<pre id="feuilleperso" style="font-size: 75%;">    
 </pre>
 <p>
 <script>
@@ -264,10 +264,10 @@ function fillChildren(node) {
 
 function prettyPrint(key, value, indent = 0) {
 
-    let result = ' '.repeat(indent) + key + " → " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + " (" + scale[value.value+max] + ")\n";
+    let result = '|   '.repeat(indent) + key + " " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '') + value.value + ' <span style="color:#808080">(' + scale[value.value+max] + ')</span>\n';
 
     for (let child in value.children)
-        result += prettyPrint(child, value.children[child], indent + 4);
+        result += prettyPrint(child, value.children[child], indent + 1);
     
     return result;
 }
