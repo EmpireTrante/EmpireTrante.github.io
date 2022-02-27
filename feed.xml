@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T13:36:18+01:00</updated>
+    <updated>2022-02-27T14:03:30+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,19 +17,21 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T13:36:18+01:00</updated>
+        <updated>2022-02-27T14:03:30+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
-                    Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires. Générer une nouvelle liste 
+                    Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, mais respectent les deux règles suivantes.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
                     <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
-                <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires.</p>
-<p> </p>
-<p> </p>
+                <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, mais respectent les deux règles suivantes.</p>
+<ul>
+<li>Il ne peut pas y avoir plusieurs mesures "sœurs" au maximum (-5 ou +5).</li>
+<li>Une mesure "parente" qui serait elle-même au maximum, ne peut avoir de mesure "fille" qui serait aussi au maximum.</li>
+</ul>
 <p> </p>
 <p><button id="mybutt">Générer une nouvelle liste</button></p>
 <pre id="feuilleperso" style="font-size: 75%;">    
@@ -232,7 +234,19 @@ function rnd() {
 }
 
 
+function isMax(val) {
+
+    return val == max || val == -max;
+}
+
+
 function match(equilibrium, values) {
+
+    let countMax = 0;
+    if (isMax(equilibrium)) ++countMax;
+    for (let v of values)
+        if (isMax(v)) ++countMax;
+    if (countMax > 1) return false;
 
     let sum = 0;
     for (let v of values) sum += v;
