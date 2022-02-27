@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T18:45:54+01:00</updated>
+    <updated>2022-02-27T21:12:24+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T18:45:54+01:00</updated>
+        <updated>2022-02-27T21:12:24+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
@@ -88,11 +88,20 @@
 <p> </p>
 <p>
 <script>
-    
+
+
+var graph, originalGraphHTML;
+
+
 setTimeout(function() {
-document.getElementById("mybutt").addEventListener('click', function () {
-  gen()
-})
+    document.getElementById("mybutt").addEventListener('click', function () {
+        gen()
+    });
+
+    graph = document.getElementById("graph");
+    originalGraphHTML = graph.innerHTML;
+
+    gen();
 }, 500);
 
 
@@ -352,18 +361,36 @@ function prettyPrint(key, value, indent = 0) {
 }
 
 
+function replaceNames(html = '', key, value) {
+
+    let regexp = new RegExp('('+key+')', 'g');
+
+    console.log("html", html);
+    html = html.replace(regexp, "$1 " + (value.value > 0 ? '+' : value.value == 0 ? '=' : '−') + Math.abs(value.value));
+
+    for (let child in value.children)
+        html = replaceNames(html, child, value.children[child]);
+
+    return html;
+}
+
+
 function gen() {
 
     fillChildren(tree.Equilibre);
     document.getElementById("feuilleperso").innerHTML =
         prettyPrint("Equilibre", tree.Equilibre);
-}
 
-gen();
+    let graphHTML = originalGraphHTML;
+
+    graphHTML = replaceNames(graphHTML, "Equilibre", tree.Equilibre);
+
+    graph.innerHTML = graphHTML;
+}
 
 </script>
 </p>
-<p><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><svg style="width: 100%; font-family: inherit;" width="1086pt" height="931pt" viewbox="0.00 0.00 1085.90 930.64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 926.6393)"> 
+<p id="graph"><a href="https://raw.githubusercontent.com/EmpireTrante/outils/main/mesures.svg"><svg style="width: 100%; font-family: inherit;" width="1086pt" height="931pt" viewbox="0.00 0.00 1085.90 930.64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 926.6393)"> 
 <title>perso</title>
 <polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-926.6393 1081.9021,-926.6393 1081.9021,4 -4,4"></polygon> <!-- Equilibre --> <g id="node1" class="node"> 
 <title>Equilibre</title>
