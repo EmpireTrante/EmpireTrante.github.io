@@ -3,7 +3,7 @@
     <title>Trante</title>
     <link href="https://empiretrante.github.io/feed.xml" rel="self" />
     <link href="https://empiretrante.github.io" />
-    <updated>2022-02-27T16:05:03+01:00</updated>
+    <updated>2022-02-27T16:06:16+01:00</updated>
     <author>
         <name>Zero</name>
     </author>
@@ -17,7 +17,7 @@
         <link href="https://empiretrante.github.io/tests-de-mesures-perso.html"/>
         <id>https://empiretrante.github.io/tests-de-mesures-perso.html</id>
 
-        <updated>2022-02-27T16:05:03+01:00</updated>
+        <updated>2022-02-27T16:06:16+01:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
@@ -29,7 +29,7 @@
                     <img src="https://empiretrante.github.io/media/posts/9/dice-g1c60cf1a2_1920.jpg" alt="" />
                 <p>Voici un générateur aléatoire pour tester la cohérence du système actuellement étudié. Les jets sont entièrement aléatoires, et sont obtenus en lançant <strong>D6 moins D6</strong> jusqu'à obtenir des Mesures qui respectent les trois règles suivantes.</p>
 <ul>
-<li>La somme des Mesures "sœurs" est égale à leur Mesure parente. </li>
+<li>La somme des Mesures "sœurs" est égale à leur Mesure "parente". </li>
 <li>Il ne peut pas y avoir plusieurs Mesures "sœurs" extrêmes (à -5 ou +5).</li>
 <li>Une Mesure "parente" qui serait elle-même extrême, ne peut avoir de Mesure "fille" qui serait elle aussi extrême.</li>
 </ul>
